@@ -1,0 +1,123 @@
+<!DOCTYPE html> <!--this tag is important because it tells what this script is about, if not mentioned--page loading will be interrupted in Quirk Mode -->
+<!--Quirk Mode: Assumes that the HTML in the web page is NOT following the HTML standard, i.e., not in standards mode. Styles won't work correctly, etc.-->
+
+<html>
+
+    <head><!--it contain the items that describe the main item of the page-->
+        <meta charset="utf-8"><!--it is a stand alone tag that describe meta data for the given webpage-->
+        <title>This is My Project</title>  <!--title contains the text that is to be displayed in the tab column-->
+    </head>
+
+
+    <body><!--contain the main body of the webpage(it contaon almost 99% of the info of the page)-->
+        <p id="top"></p> <!--it's a empty tag, seeking to absorb content later-->
+
+<!--           Block level element               |vs|                 inline element
+            Render to begin on same line           |             Render to Begin on same line
+    may cantain inline or other block level elemet |            May contain other line element
+                Roughly flow content               |               Roughly Phrase Content           -->
+
+
+        <div>DIV 1: Some Content here</div>
+        <div>DIV 2: Additional content here</div>
+        <span>Following right after div 2</span>
+        <div>
+            <span>This is a span under div</span>
+            <span>This is another span under div</span>
+        </div>
+        <!--<span><div> this is illegal, beacause we cant put a block level lement in a in line element</div></span>-->
+
+<!--headings
+        these heading tags are only for conveying structure of the page, not any style-->
+        <h1>This is the main heading</h1>
+        <h2>TSubheading 2</h2>
+        <h3>Subheading 3</h3>
+        <h4>Subheading 4</h4>
+        <h5>Subheading 5</h5>
+        <h6>Subheading 6</h6>
+<!--blocl level element
+        
+        these are tags that define the importance of the content not the actual position
+        how ever it is named as actual position to be easily rememberd and give give structure to our code-->
+        <header>
+            <h1>This is section 1</h1>
+        </header>
+        <section>
+            <article>This is an article</article>
+            <article>this is another article</article>
+        </section>
+
+        <aside>
+            as from the name it displys content that is related to the topic but not exactly same
+        </aside>
+        
+        <footer>
+            this is the one which is applied at bottom of the page and has almost no relevence to content that the page shows
+        </footer>
+
+<!--list-->
+
+
+        <ul>
+            <li>Milk</li>
+            <li>Donut</li>
+            <li>Cookie</li>
+            <ul>
+                <li>GoodDay</li>
+                <li>Nice</li>
+                <li>Dark Fantacy</li>
+            </ul>
+            <li>Butter</li>
+        </ul>
+
+        <span><h2>Oreo Cookie Eating procedure</h2></span>
+
+        <ol>
+            <li>Open Box</li>
+            <li>Takeout cookie</li>
+            <li>make a double oreo</li>
+            <ol>
+                <li>Pell off the top part</li>
+                <li>place another cookie in the moddle</li>
+                <li>put back the top part</li>
+            </ol>
+            <li>Enjoy</li>
+        </ol>
+
+<!--character entity reference
+        it can be messy to use < or > symbol as plain text in html, so below are some alternative to print < or > or &-->
+        
+        <!--  < is refered as  &lt;-->
+        <!--  > is refered as  &gt;-->
+        <!--  & is refered as  &amp;--->
+        <!--  (no breaking lines if page page short) is refered as &nbsp;-->
+        <!-- " is refered to &quote"-->
+        <!-- (copyright) is refered to &copy-->
+
+        <div><h3>&gt; &lt; &amp;</h3></div>
+        <h1>&copy;</h1>
+        it's&nbsp;not&nbsp;the&nbsp;fact&nbsp;that&nbsp;you&nbsp;kissed&nbsp;me&nbsp;yesterday, its&nbsp;the&nbsp;feeling&nbsp;of&nbsp;betrayl&nbsp;that&nbsp;i&nbsp;just&nbsp;cant&nbsp;seem&nbsp;to&nbsp;place, i&nbsp;just&nbsp;wanna&nbsp;stay.
+
+        
+<!--links-->
+
+        <!--internal links-->
+        <a href="site/index.html" title = "this is the hosted web page"><u>reload</u></a>
+        <a href="LEARNME.html" title = "this is the same web page"><div><h2><u>reload</u></h2></div></a> <!--this will create a link that will be accessible to us from far away 
+                                                                                                            as it is using a block level element to define link-->
+
+        <!--external link-->
+        <a href="http://www.google.com/" title="this is a search engine" target="_blank"><div><h1>Google</h1></div></a> <!--when target attribute is used with _blank parametre, 
+                                                                                                                            it forces browser to open web page on new window this 
+                                                                                                                            is good for people visiting site that have less attention span-->
+
+        <!--samepage link-->
+        <a href="#top" title="this will take you to top of the page">(Go to top)</a> <!--id of a tag can be treated a link to same section of page as it is unique
+                                                                                        it is used with prefix "#" example: herf = "#top" when providing as link-->
+
+<!--image-->
+
+        <img src="tree.jpg" width="560"><!--mentioning width and height is important because it will leave space for images which will not jump the content of the page due to slow loading-->
+
+    </body>
+</html>
