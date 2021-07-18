@@ -1,0 +1,150 @@
+/*
+properties:functoin(their definite value)
+
+color: it decides of the colour of the text
+font-size: (values)
+align-items: (canter, left, right, justified)
+
+
+*/
+
+/*tag selector or element selector*/
+p {
+    color: blue; /*declaration contain: property: value*/
+
+}
+
+footer {
+    font-size: 20px;
+}
+
+/*class selector*/
+.blue {
+    color: pink;
+    background-color: red;
+    align-items: center;
+}
+
+/*id selector*/
+#section1 {
+    color: pink;
+    background-color: red;
+    align-items: center;
+}
+
+/*seperate selector (applied to both selector)*/
+#india , .red{
+    color: red;
+    background-color: blue;
+}
+
+/*combining selector*/
+/*element with class selector*/
+
+p.blue {
+    align-items: right;
+}
+
+/*child selector*/
+
+div > span {   /*span tag is defined inside (just inside, not any specific level) div tag*/
+    background-color: chartreuse;
+}
+
+/*descendant selector */
+section li {/*li is a child of div at any level*/
+    column-width: 1cm;
+}
+
+/*there are no limits to element selector, class or id or any*/
+
+/*Pseudo selector*/
+a:active, a:hover {
+    background-color: gray;
+}
+
+a:link, a:visited {
+    color: yellow;
+}
+
+li:nth-child(2):hover {
+    background-color: gray;
+}
+
+footer > div:nth-child(odd) {
+    color: white;
+    background-color: gray;
+    width: 100px;
+    text-align: right;
+    margin-bottom: 2px;
+
+}
+
+footer:hover div:nth-child(4) {
+    background-color: black;
+    color: white;
+}
+
+footer > div:hover, div:active{
+    background-color: tomato;
+    color: white;
+}
+
+/*css code can br implemented in:
+    i) inside tag: style="properties: value; properties2: value2;"
+    ii) inside head tag: <style>codes</style>
+    iii) link tag: <link rel="stylesheet href:"filename.css"*/
+    
+/*Conflict resolution / priority order*/
+    /*i)Simple resolution: last declaration wins.
+      ii)Declaration Merge: declarations get feMerge
+      iii)DOM tree(Document Object Model tree):if property ie sapplied to a tag, all its children and grandchildren inherit that. but child's property cant be inheritted by parent
+      iv)Specificity: Most Specific Selector combination wins. priority-->
+                                                                          1)style attributr
+                                                                          2)id
+                                                                          3)class
+                                                                          4)number of selector element(p.blue is taken as one p .blue is taken as 2)
+                                                            Make a four digit number by numbering above priorities as number of them present in the css style.
+*/
+
+
+.font {
+    font-family: 'Times New Roman', Times, serif; /*Font Type*/
+    color: #0000ff;                             /*rrggbb(hexa decimals)*/
+    font-style: italic;                           /*italic and style*/
+    font-weight: bold;                            /*bold size in turn of weight*/
+    font-size: 120%;        /*percentage and em are relative, applying 2em 2em 2 times in scrpt makes the second text 4 times the orignal times. decided 120% of orignal size, : 3em; 3 times the size*/
+    text-transform: capitalize;                   /*capitalize, uppercase, lowercase*/
+    text-align: center;                           /*centre left right*/
+
+
+}
+
+#box {
+    background-color: black;
+    color: white;
+    margin: 20px;
+    border: 20px solid black;
+    border-color:red;
+    height: 1px;
+    padding: 50px; /*top right bottom left  (defines position of text inside block)*/
+
+}
+
+* {
+    box-sizing: border-box;/*this will include size from outer boder to outter border*/
+    overflow: auto;  /*apply scrollbar where needed*/
+
+}
+
+
+/*margin collapse in top bottom case and adds in left right case*/
+
+/*a box is made by border, margin define space outside that it reacts with. padding define space it interacts with contents.*/
+
+#bgpic {
+    background-color: blue;
+    background-image: url("tree.jpg");
+    color: white;
+    height: 3cm;
+}

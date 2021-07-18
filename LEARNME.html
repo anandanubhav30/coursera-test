@@ -3,9 +3,17 @@
 
 <html>
 
+    
+
     <head><!--it contain the items that describe the main item of the page-->
         <meta charset="utf-8"><!--it is a stand alone tag that describe meta data for the given webpage-->
         <title>This is My Project</title>  <!--title contains the text that is to be displayed in the tab column-->
+        <link rel="stylesheet" href="LEARNME.css">
+        <style>
+            body {
+                background: rgb(231, 231, 231);
+            }
+        </style>
     </head>
 
 
@@ -73,11 +81,11 @@
         <span><h2>Oreo Cookie Eating procedure</h2></span>
 
         <ol>
-            <li>Open Box</li>
+            <li><span class = "blue">Open Box</span></li>
             <li>Takeout cookie</li>
             <li>make a double oreo</li>
             <ol>
-                <li>Pell off the top part</li>
+                <li id="india">Pell off the top part</li>
                 <li>place another cookie in the moddle</li>
                 <li>put back the top part</li>
             </ol>
@@ -112,12 +120,40 @@
                                                                                                                             is good for people visiting site that have less attention span-->
 
         <!--samepage link-->
-        <a href="#top" title="this will take you to top of the page">(Go to top)</a> <!--id of a tag can be treated a link to same section of page as it is unique
+        <a class="red" href="#top" title="this will take you to top of the page">(Go to top)</a> <!--id of a tag can be treated a link to same section of page as it is unique
                                                                                         it is used with prefix "#" example: herf = "#top" when providing as link-->
 
 <!--image-->
 
         <img src="tree.jpg" width="560"><!--mentioning width and height is important because it will leave space for images which will not jump the content of the page due to slow loading-->
+        <!--src can take a image url also-->
+        <BR><BR>
+        <footer>
+            <div>DIV 1</div>
+            <div>DIV 2</div>
+            <div>DIV 3</div>
+            <div>DIV 4</div>
+            <div>DIV 5</div>
+            <div>DIV 6</div>
+            <div>DIV 7</div>
+            <div>DIV 8</div>
+            <div>DIV 9</div>
+            <div>DIV 10</div>
+            <div>DIV 11</div>
+            <div>DIV 12</div>
+            <div>DIV 13</div>
+            <div>DIV 14</div>
+            <div>DIV 15</div>
+        </footer>
+
+        <div id="box" style="font-size: 32px;">
+            <div>Hello my name ais anubhav anand and what ios your anmeje nfwejwn nnsfjwrn wnj njfnnwf nfewfnn nfns</div>
+            <div class="scrollbar">Hello my name ais anubhav anand and what ios your anmeje nfwejwn nnsfjwrn wnj njfnnwf nfewfnn nfns</div>
+            
+        </div>
+        <div id="bgpic">
+            Anubhav
+        </div>
 
     </body>
 </html>
