@@ -148,3 +148,18 @@ footer > div:hover, div:active{
     color: white;
     height: 3cm;
 }
+
+#floater {
+    float:right;/*floats the string to the position. leaving the orignal position position*/
+
+}
+
+#clear {
+    clear: right;/*nothingcan float to the right of text*/
+}
+
+/*Relative positioning:
+                        element is positioned relatve to posotioin of the nrmal document flow
+                        positioning off set properties are: top bottom leaft right
+                        element is not taken out of the nornmal document flow, its orignal space is preserved*/
+                        
